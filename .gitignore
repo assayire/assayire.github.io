@@ -1,0 +1,7 @@
+.idea
+.vscode
+
+*.lock
+_gen
+
+.DS_Store
