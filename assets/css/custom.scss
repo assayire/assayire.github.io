@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+p, li, ol {
+	font-family: Libre Baskerville, sans-serif;
+}
+
+.avatar {
+	@keyframes avatar-bw-anime {
+		from { border-width: 0.5px; }
+		to { border-width: 2px; }
+	}
+
+
+	img {
+		border: 0.5px solid purple;
+	}
+
+	img:hover {
+		content:url("/images/avatar-color.jpg");
+		cursor: pointer;
+		animation-duration: 0.5s;
+		animation-name: avatar-bw-anime;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		// border-width: 2px;
+		// transition-duration: 1s,1s,1s;
+		// transition-property: border-width, color;
+	}
+}
+
+.post-meta {
+	font-size: 75% !important;
+
+	.tags, .date {
+		width: 50%;
+    float: left;
+    // padding: 20px;
+    margin-bottom: 20px;
+	}
+}
