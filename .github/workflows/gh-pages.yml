@@ -25,6 +25,8 @@ jobs:
 
       - name: Build
         run: hugo --minify
+        run: echo '::set-output name=SELECTED_COLOR::green'
+        run: echo 'Finished running: hugo --minify'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
